@@ -1,7 +1,7 @@
 # Shortcuts
 A Javascript library that lets you trigger events using keyboard shortcuts.
 
-This library is a rewritten and simplified version of [this library](http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js). I was trying to use the original version on an Electron project but I ran into some problems that I had difficulty debugging, so I deconstructed it and wrote my own version, containing about half the lines of code, and wrapped in an [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression).
+This library is a rewritten and simplified version of [this library](http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js). I was trying to use the original version on an Electron project but I ran into a number of problems, so I deconstructed it and wrote my own version. It contains about half the lines of code, and comes wrapped in an [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression).
 
 ### Usage Examples
 After cloning the library, load __test.html__ in your browser to see a few usage examples.

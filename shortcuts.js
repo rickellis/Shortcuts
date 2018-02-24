@@ -15,28 +15,9 @@
 //-----------------------------------------------------------------------------------
 // Author:   Rick Ellis
 // URL:      https://github.com/rickellis/shortcuts
-// License:  MIT
-//-----------------------------------------------------------------------------------
+// License:  BSD
 //
-//  To add a shortcut:
-//
-//        shortcuts.add('cmd+n',function() {
-//            createnewfile()
-//        })
-//
-// You can optionally pass an element via the third parameter
-// in order to attach a shortcut to a specific DOM object:
-//
-//  var element = document.getElementById('myid')
-//
-//        shortcuts.add('cmd+n',function() {
-//            createnewfile()
-//        }, element)
-//
-// To remove a shortcut:
-//
-//        shortcuts.remove('cmd+n')
-//
+// For usage examples, see README
 //-----------------------------------------------------------------------------------
 
 var shortcuts = new function() {
@@ -175,7 +156,6 @@ var shortcuts = new function() {
             this.shortcutExists[shortcut] = false
         }
     }
-
 
 // End shortcuts
 }()

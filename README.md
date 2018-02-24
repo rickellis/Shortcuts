@@ -3,7 +3,7 @@ A Javascript library that lets you trigger events using keyboard shortcuts.
 
 This library is a rewritten and simplified version of [this library](http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js). I was trying to use the original version on an Electron project but I ran into some problems that I had difficulty debugging, so I deconstructed and rewrote it. I'm releasing it under the BSD license to match the original.
 
-### Usage examples
+### Usage Examples
 After cloning the library, load __test.html__ in your browser to see a few usage examples.
 
 ### Adding Shortcuts

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html>
+<title>Shortcuts</title>
+
+<script src="shortcuts.js"></script>
+
+<script>
+
+shortcuts.add('shift+up',function() {
+    alert('You pressed shift+up')
+})
+
+shortcuts.add('ctrl+5',function() {
+    document.body.style.background = "#ffff00";
+})
+
+shortcuts.add('alt+k',function() {
+    document.getElementById("foobar").innerText = "Hello there Earthling!"; 
+})
+
+
+</script>
+
+<body>
+
+<h2>Shortcut Tests</h2>
+
+<p>Press <b>shift+up arrow</b> to trigger an alert.</p>
+
+<p>Press <b>control+5</b> to change the background color to yellow.</p>
+
+<p id="foobar">Press <b>alt+k</b> to reveal a secret message. </p>
+
+
+</body>
+</html> 

@@ -3,7 +3,7 @@ A Javascript library that lets you trigger events using keyboard shortcuts.
 
 This library is a rewritten and simplified version of [this library](http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js). I was trying to use the original version on an Electron project but I ran into some problems that I had difficulty debugging, so I deconstructed it and rewrote it. I'm releasing it under the BSD license to match the original.
 
-## Adding Shortcuts
+### Adding Shortcuts
 
 To add a keyboard shortcut use:
 
@@ -21,13 +21,13 @@ You can optionally pass a DOM element via the third parameter in order to attach
         myFunction()
     }, element)
 
-## Removing Shortcuts
+### Removing Shortcuts
 
 To remove a keyboard shortcut use:
 
     shortcuts.remove('ctrl+shift+m')
 
-# Key assignments
+### Modifier Keys
 
 The following modifier keys are supported:
 
@@ -36,7 +36,9 @@ The following modifier keys are supported:
 * alt
 * shift
 
-## License
+### License
+
+BSD License
 
 Copyright 2018, Rick Ellis
 

@@ -1,34 +1,54 @@
-# Shortcuts
+# Shortcut.js
 A Javascript library that lets you trigger events using keyboard shortcuts.
 
-This library is a rewritten and simplified version of [this library](http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js). I was trying to use the original on an Electron project but ran into a number of problems, so I deconstructed it and wrote my own version. It contains about half the lines of code, and comes wrapped in an [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression).
+This library is a ES6+ version of [Rick's Shortcuts](https://github.com/rickellis/Shortcuts), I updated it to be used with ES Modules and newer patterns.
 
-### Usage Examples
-After cloning the library, load __test.html__ in your browser to see a few usage examples.
+## Installing
+Download the shortcut file using via wget:
+
+```bash
+wget https://raw.githubusercontent.com/VitorGouveia/Shortcut.js/master/shortcuts.js
+```
+
+then, just import it into your file:
+
+```js
+import { shortcut } from "./shortcuts.js";
+```
+
+<br />
+
+## Usage
 
 ### Adding Shortcuts
 
-To add a keyboard shortcut use:
+To bind a keyboard shortcut use the `add` function:
 
-    shortcuts.add('ctrl+shift+m',function() {
-        myFunction()
-    })
+```js
+shortcut.add('ctrl+shift+m', () => {
+    // your code here
+})
+```
 
-In the above example we are assigning the __control shift m__ keys to a function called `myFunction`.
+### Bnding to a custom element
 
-You can optionally pass a DOM element via the third parameter in order to attach a shortcut to a specific object:
+To bind a keyboard shortcut to a custom HTML element use the `add` function with a third parameter:
 
-    var element = document.getElementById('myid')
+```js
+const element = document.querySelector("#container")
 
-    shortcuts.add('ctrl+shift+m',function() {
-        myFunction()
-    }, element)
+shortcut.add('ctrl+shift+m', () => {
+    // your code here
+}, element)
+```
 
 ### Removing Shortcuts
 
-To remove a keyboard shortcut use:
+To un-bind/remove a keyboard shortcut use the `remove` function:
 
-    shortcuts.remove('ctrl+shift+m')
+```js
+shortcut.remove('ctrl+shift+m')
+```
 
 ### Modifier Keys
 
@@ -39,7 +59,24 @@ The following modifier keys are supported:
 * alt
 * shift
 
-### License
+<br />
+
+## Examples
+see the [example](example.html) for more usage details.
+
+<br />
+
+## Fixes & Improvements
+
+- switch format from IIFE to ESM
+- change `var` variables to `const` and `let`
+- add types with JSDoc
+- remove `keycodes` object for native `event.key` variable
+- use object bracket notation to remove `if`'s
+
+<br />
+
+## (original) License
 
 BSD License
 
